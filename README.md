@@ -41,13 +41,13 @@ Then copy the JS library (js/blazoredRecaptcha.min.js) to the wwwroot folder and
 
 To get started generating tokens, just simply call this method:
 
-```
+```c
 var token = await RecaptchaService.GenerateCaptchaTokenAsync("action");
 ```
 
 Then, with that token, you can validate it with Google to check if the user is likely a bot or not:
 
-```
+```c
 if (!await RecaptchaService.VerifyCaptchaAsync(token))
 {
   Console.WriteLine("Begone bot!");
