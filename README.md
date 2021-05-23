@@ -19,7 +19,7 @@ Then open the .sln file with Visual Studio 2019 and just rebuild. It should fetc
 ## Usage / documentation
 Let's get started. To begin using the library, simply add it to your ServiceCollection:
 
-```c
+```C#
 services.AddRecaptcha(options => 
 {
   options.SiteKey = "My site key";
@@ -29,7 +29,7 @@ services.AddRecaptcha(options =>
 
 This will inject the RecaptchaService into your ServiceCollection. You can now access it from any Razor page like this:
 
-```c
+```C#
 @inject RecaptchaService RecaptchaService
 ```
 
@@ -41,13 +41,13 @@ Then copy the JS library (js/blazoredRecaptcha.min.js) to the wwwroot folder and
 
 To get started generating tokens, just simply call this method:
 
-```c
+```C#
 var token = await RecaptchaService.GenerateCaptchaTokenAsync("action");
 ```
 
 Then, with that token, you can validate it with Google to check if the user is likely a bot or not:
 
-```c
+```C#
 if (!await RecaptchaService.VerifyCaptchaAsync(token))
 {
   Console.WriteLine("Begone bot!");
