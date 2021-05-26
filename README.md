@@ -55,11 +55,11 @@ if (!await RecaptchaService.VerifyCaptchaAsync(token))
 ```
 
 ## Open-source libraries
-Thank you for all these people below for your amazing open-source libraries that made this client possible
+Thank you for all these people below for your amazing open-source libraries that made this project possible
 
 - [Newtonsoft.Json](https://github.com/JamesNK/Newtonsoft.Json)
 
 ## Contributors
-Thank you for all these people for contributing to the LightVPN Windows client source code, and helping make it better for everyone
+Thank you for all these people for contributing to the BlazoredRecaptcha source code, and helping make it better for everyone
 
 none yet :(
