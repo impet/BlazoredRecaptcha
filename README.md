@@ -10,7 +10,7 @@ Licensed under the MIT license, see LICENSE.md
 ## Compiling / Installation
 To compile from source, if you so wish to, just simply clone the source code
 
-```
+```bash
 git clone https://github.com/HarryTq/BlazoredRecaptcha.git
 ```
 
