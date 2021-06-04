@@ -7,6 +7,9 @@ Licensed under the MIT license, see LICENSE.md
 ## Requirements
 - Visual Studio 2019
 
+## Warnings
+This project is designed and tested on Blazor server-side, and it potentially could work on Blazor WASM (WebAssembly). It WILL NOT work on Razor pages as it depends on IJSRuntime which Razor lacks.
+
 ## Compiling / Installation
 To compile from source, if you so wish to, just simply clone the source code
 
@@ -26,6 +29,8 @@ services.AddRecaptcha(options =>
   options.SecretKey = "My secret key";
 });
 ```
+
+(you can also combine this with Microsoft's standard appsettings system, I would recommend using appsettings instead of hard-coding the keys into your application)
 
 This will inject the RecaptchaService into your ServiceCollection. You can now access it from any Razor page like this:
 
